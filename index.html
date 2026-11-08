@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="./support.js" defer></script>
 </head>
 <body>
 <x-dc>
@@ -116,10 +118,10 @@
       </div>
 
       <div class="r-hero-media" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:14px;">
-        <img src="photos/w-hero-car-3.jpg" alt="Detailed Tesla Model 3" style="display:block;width:100%;aspect-ratio:4/3;border-radius:12px;object-fit:cover;" />
+        <img fetchpriority="high" decoding="async" src="photos/w-hero-car-3.jpg" alt="Detailed Tesla Model 3" style="display:block;width:100%;aspect-ratio:4/3;border-radius:12px;object-fit:cover;" />
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;">
-          <img src="photos/w-hero-car.jpg" alt="Detailed wheel close-up" style="display:block;width:100%;aspect-ratio:1/1;border-radius:12px;object-fit:cover;" />
-          <img src="photos/w-hero-car-2.jpg" alt="Detailed front paintwork" style="display:block;width:100%;aspect-ratio:1/1;border-radius:12px;object-fit:cover;" />
+          <img loading="lazy" decoding="async" src="photos/w-hero-car.jpg" alt="Detailed wheel close-up" style="display:block;width:100%;aspect-ratio:1/1;border-radius:12px;object-fit:cover;" />
+          <img loading="lazy" decoding="async" src="photos/w-hero-car-2.jpg" alt="Detailed front paintwork" style="display:block;width:100%;aspect-ratio:1/1;border-radius:12px;object-fit:cover;" />
         </div>
         <p style="margin:13px 4px 4px;font-size:12.5px;color:#8A9298;text-align:center;">{{ t.heroPhotoNote }}</p>
       </div>
@@ -307,11 +309,11 @@
         <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:10px;">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
             <div style="position:relative;aspect-ratio:3/4;border-radius:11px;overflow:hidden;">
-              <img src="photos/w-interior-before.jpg" alt="Interior before detailing" style="display:block;width:100%;height:100%;object-fit:cover;" />
+              <img loading="lazy" decoding="async" src="photos/w-interior-before.jpg" alt="Interior before detailing" style="display:block;width:100%;height:100%;object-fit:cover;" />
               <span style="position:absolute;top:8px;left:8px;font-weight:700;font-size:11px;letter-spacing:0.14em;color:#fff;background:rgba(20,23,25,.72);padding:4px 9px;border-radius:6px;">{{ t.beforeLabel }}</span>
             </div>
             <div style="position:relative;aspect-ratio:3/4;border-radius:11px;overflow:hidden;border:1px solid rgba(31,158,154,.4);">
-              <img src="photos/w-interior-after.jpg" alt="Interior after detailing" style="display:block;width:100%;height:100%;object-fit:cover;" />
+              <img loading="lazy" decoding="async" src="photos/w-interior-after.jpg" alt="Interior after detailing" style="display:block;width:100%;height:100%;object-fit:cover;" />
               <span style="position:absolute;top:8px;left:8px;font-weight:700;font-size:11px;letter-spacing:0.14em;color:#fff;background:#1F9E9A;padding:4px 9px;border-radius:6px;">{{ t.afterLabel }}</span>
             </div>
           </div>
@@ -320,11 +322,11 @@
         <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:10px;">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
             <div style="position:relative;aspect-ratio:3/4;border-radius:11px;overflow:hidden;">
-              <img src="photos/w-pillar-before.jpg" alt="Trim before polishing" style="display:block;width:100%;height:100%;object-fit:cover;" />
+              <img loading="lazy" decoding="async" src="photos/w-pillar-before.jpg" alt="Trim before polishing" style="display:block;width:100%;height:100%;object-fit:cover;" />
               <span style="position:absolute;top:8px;left:8px;font-weight:700;font-size:11px;letter-spacing:0.14em;color:#fff;background:rgba(20,23,25,.72);padding:4px 9px;border-radius:6px;">{{ t.beforeLabel }}</span>
             </div>
             <div style="position:relative;aspect-ratio:3/4;border-radius:11px;overflow:hidden;border:1px solid rgba(31,158,154,.4);">
-              <img src="photos/w-pillar-after.jpg" alt="Trim after polishing" style="display:block;width:100%;height:100%;object-fit:cover;" />
+              <img loading="lazy" decoding="async" src="photos/w-pillar-after.jpg" alt="Trim after polishing" style="display:block;width:100%;height:100%;object-fit:cover;" />
               <span style="position:absolute;top:8px;left:8px;font-weight:700;font-size:11px;letter-spacing:0.14em;color:#fff;background:#1F9E9A;padding:4px 9px;border-radius:6px;">{{ t.afterLabel }}</span>
             </div>
           </div>
@@ -333,11 +335,11 @@
         <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:10px;">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
             <div style="position:relative;aspect-ratio:3/4;border-radius:11px;overflow:hidden;">
-              <img src="photos/w-paint-before.jpg" alt="Paint before correction" style="display:block;width:100%;height:100%;object-fit:cover;" />
+              <img loading="lazy" decoding="async" src="photos/w-paint-before.jpg" alt="Paint before correction" style="display:block;width:100%;height:100%;object-fit:cover;" />
               <span style="position:absolute;top:8px;left:8px;font-weight:700;font-size:11px;letter-spacing:0.14em;color:#fff;background:rgba(20,23,25,.72);padding:4px 9px;border-radius:6px;">{{ t.beforeLabel }}</span>
             </div>
             <div style="position:relative;aspect-ratio:3/4;border-radius:11px;overflow:hidden;border:1px solid rgba(31,158,154,.4);">
-              <img src="photos/w-paint-after.jpg" alt="Paint after correction" style="display:block;width:100%;height:100%;object-fit:cover;" />
+              <img loading="lazy" decoding="async" src="photos/w-paint-after.jpg" alt="Paint after correction" style="display:block;width:100%;height:100%;object-fit:cover;" />
               <span style="position:absolute;top:8px;left:8px;font-weight:700;font-size:11px;letter-spacing:0.14em;color:#fff;background:#1F9E9A;padding:4px 9px;border-radius:6px;">{{ t.afterLabel }}</span>
             </div>
           </div>
